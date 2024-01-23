@@ -1,0 +1,313 @@
+.container {
+  width: 35%;
+  height: 100%;
+  background-color: #705f8b;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 3%;
+  background-color: #6d5692;
+  height: 10%;
+  border-top-left-radius: 10px;
+}
+
+.tittle {
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.userInfoBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.profileLetterImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  background-color: #705f8b;
+}
+
+.profileImg {
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  background-size: cover;
+}
+
+.logoutBtn {
+  color: white;
+  background-color: #21508e;
+  border: none;
+  border-radius: 1px;
+  font-size: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.logoutBtn:hover {
+  background-color: #2b5790;
+}
+
+.profileName {
+  font-weight: 100;
+}
+
+.inbox {
+  position: relative;
+  height: 83.6%;
+}
+
+.inputBox {
+  width: 100%;
+  height: 35px;
+  border-bottom: 1px solid rgb(139, 138, 138);
+}
+
+.input {
+  padding-left: 10px;
+  width: 100%;
+  background-color: #705f8b;
+  border: none;
+  color: white;
+  height: 100%;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: white;
+  font-size: 12px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 1px solid gray;
+  background-color: #6d5692;
+}
+
+.searchUser {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 1px solid gray;
+  background-color: #6d5692;
+}
+
+.searchUser:hover {
+  background-color: #5f5076;
+}
+
+.user:hover {
+  background-color: #5f5076;
+}
+
+.userProfileLetterImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 65px;
+  background-color: #705f8b;
+  border-radius: 100px;
+  font-size: 25px;
+}
+
+.userProfileImg {
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  border-radius: 100px;
+}
+
+.usernameBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 10px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.usernameBox p {
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  color: rgb(171, 161, 161);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.username {
+  font-weight: 100;
+}
+
+.userSearchList {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  background-color: #705f8b;
+}
+
+.chevronIcon {
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.user:hover .chevronIcon {
+  opacity: 1;
+  transform: translateX(-100%);
+}
+
+.userContainer {
+  display: flex;
+  align-items: center;
+  width: 85%;
+}
+
+.chevronIconContainer {
+  position: relative;
+}
+
+.chevronPopup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 225, 0.9);
+  color: rgb(171, 161, 161);
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  top: 100%;
+  left: -15px;
+  z-index: 1;
+  font-size: 14px;
+}
+
+.chevronPopup:hover {
+  color: rgb(144, 135, 135);
+}
+
+.userSearchList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.userSearchList::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  /* nav */
+
+  .nav {
+    justify-content: center;
+  }
+
+  .tittle {
+    display: none;
+  }
+
+  /* inbox */
+
+  .userProfileImg {
+    height: 40px;
+    width: 40px;
+  }
+
+  .userProfileLetterImg {
+    height: 40px;
+    width: 50px;
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 750px) {
+  /* nav */
+
+  .logoutBtn {
+    font-size: 7px;
+  }
+
+  .profileName {
+    font-size: 10px;
+  }
+
+  .profileImg {
+    height: 20px;
+    width: 20px;
+  }
+
+  .userInfoBox {
+    gap: 4px;
+  }
+
+  /* inbox */
+
+  .username {
+    font-size: 12px;
+  }
+
+  .userProfileImg {
+    height: 20px;
+    width: 20px;
+  }
+
+  .userProfileLetterImg {
+    height: 20px;
+    width: 30px;
+    font-size: 12px;
+  }
+
+  .chevronIcon {
+    height: 10px;
+  }
+
+  .usernameBox p {
+    font-size: 8px;
+  }
+
+  .usernameBox {
+    padding-left: 5px;
+    padding-top: 10px;
+  }
+
+  .chevronPopup {
+    width: 50px;
+    height: 20px;
+    padding: 0px;
+    font-size: 8px;
+    border-radius: 5px;
+  }
+
+  .chevronIcon {
+    transform: translateX(-20%);
+  }
+
+  .user:hover .chevronIcon {
+    transform: translateX(-50%);
+  }
+}

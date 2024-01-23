@@ -1,0 +1,215 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 350px;
+  min-height: 335px;
+  border-radius: 30px;
+  background-color: rgba(204, 183, 195, 0.6);
+}
+
+.box p {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #374e6e;
+  font-style: italic;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+
+.iconInputBox {
+  display: flex;
+  width: 100%;
+}
+
+.input {
+  height: 40px;
+  width: 100%;
+  background-color: #374e6e;
+  border: none;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  color: #7185a1;
+}
+
+.errorInput {
+  height: 40px;
+  width: 100%;
+  background-color: #374e6e;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  color: #7185a1;
+  border-color: red;
+}
+
+.inputBox input::placeholder {
+  color: #7185a1;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+}
+
+.inputBox input:focus {
+  outline: none;
+}
+
+.userIconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 40px;
+  width: 45px;
+  background-color: #00254b;
+}
+
+.passwordUserIconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 40px;
+  width: 55px;
+  background-color: #00254b;
+}
+
+.togglePaswordBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 40px;
+  width: 55px;
+  background-color: #00254b;
+  cursor: pointer;
+}
+
+.togglePaswordBox:hover {
+  color: rgb(214, 207, 207);
+}
+
+.absoluteIconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -50px;
+  color: white;
+  background-color: #00254b;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+
+.absoluteIcon {
+  height: 50px;
+}
+
+.fadingBox {
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    rgba(204, 183, 195, 0),
+    rgba(204, 183, 195, 0.6)
+  );
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: rgb(226, 217, 217);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.fadingBox:hover {
+  color: rgb(238, 233, 233);
+}
+
+.pBox {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.clickP {
+  cursor: pointer;
+  color: #00254b;
+  font-weight: 600;
+}
+
+.clickP:hover {
+  color: #083460;
+}
+
+.googleAuthBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #00254b;
+  color: white;
+  border-radius: 100%;
+  bottom: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.googleAuthBtn:hover {
+  transform: scale(1.1);
+}
+
+.errorText {
+  color: red;
+  margin-bottom: 3px;
+}
+
+.footerBox {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatarBox {
+  color: #374e6e;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.avatarBox h6 {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.avatarIcon {
+  height: 25px;
+  color: #00254b;
+}
+
+.avatarIcon:hover {
+  color: #083460;
+}
